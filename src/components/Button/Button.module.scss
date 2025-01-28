@@ -1,0 +1,44 @@
+@import '../../styles/index.scss';
+
+.button {
+  @include flexCenter;
+  width: 100%;
+  padding: 15px;
+
+  -moz-column-gap: 20px;
+
+       column-gap: 20px;
+
+  border-radius: 5px;
+  color: $text-color-light;
+  background-color: $color-green;
+
+  border-style: none;
+
+  font-size: $font-size-l;
+  font-weight: $font-weight-bold;
+
+  transform: translate3d(0, 0, 0);
+  transition-duration: 0.2s;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+
+  &:disabled,
+  &[disabled],
+  &.disabled {
+    cursor: not-allowed;
+    pointer-events: none;
+    background-color: rgba($color-green, 0.5);
+  }
+
+  &:hover {
+    background-color: darken($color-green, 5%);
+  }
+
+  &:active {
+    background-color: darken($color-green, 10%);
+
+  }
+}

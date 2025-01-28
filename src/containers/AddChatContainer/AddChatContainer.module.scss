@@ -1,0 +1,28 @@
+@import '../../styles/index.scss';
+
+.addChat {
+  position: relative;
+  z-index: 3;
+
+  .container {
+    padding: 10px;
+    height: 75px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    -moz-column-gap: 5px;
+         column-gap: 5px;
+
+    .inputWrapper {
+      position: relative;
+      flex: 1 1 auto;
+    }
+  }
+}
+
+.error {
+  margin: 10px 0;
+  color: $color-red;
+  text-align: center;
+}

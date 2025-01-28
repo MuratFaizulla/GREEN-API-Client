@@ -1,4 +1,4 @@
 export interface MessageItem {
-    chatId: string
-    message: string
-  }
+  chatId: string
+  message: string
+}

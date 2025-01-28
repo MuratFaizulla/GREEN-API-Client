@@ -1,0 +1,22 @@
+@import '../../styles/index.scss';
+
+.error {
+  margin-bottom: 20px;
+  color: $color-red;
+  text-align: center;
+}
+
+.form {
+  @include flexCenter;
+  position: relative;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.register {
+  text-align: center;
+  
+  .link {
+    color: $color-green;
+  }
+}
